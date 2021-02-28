@@ -7,4 +7,4 @@ O intuito deste projeto é construir uma estação metereológica com Arduino ut
 
 Abaixo segue o esquemático elétrico para montagem da estaçào metereológica com o Arduino:
 
-![Image of Arduino Eletronic Schematic](kackaton-arduino.png)
+![Image of Arduino Eletronic Schematic](hackaton-arduino.png)
