@@ -30,4 +30,4 @@ The figure bellow show as the phisical sensors must be connected on Arduino:
 This project only reads the temperature, humidity, pressure, and altitude and sends this data to a base station. A dashboard was also built in HTML5, CSS3, and JS that displays this data to the user by consuming a REST API exposed by the base station. For more details of the base station project or dashboard project, visit:
 
 * [Raspberry Pi Weather Base Station](https://github.com/profbrunolopes/weather-base-station)
-* [Weather Station Dashboard](http://google.com)
+* [Weather Station Dashboard](https://github.com/profbrunolopes/weather-dashboard)
