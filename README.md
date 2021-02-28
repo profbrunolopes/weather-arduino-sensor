@@ -1,31 +1,33 @@
 # Weather Arduino Sensor
 
-O intuito deste projeto é construir uma estação metereológica com Arduino capaz de coletar dados de temperatura, umidade, pressão atmosférica e altitude e enviar esses dados para uma estação base.
+The purpose of this project is to build a weather station with Arduino capable of collecting data on temperature, humidity, atmospheric pressure, and altitude. After collecting these data, they are displayed on an OLED display and sent to a base station to store the data.
 
-## Sensores
-Para construir esse projeto foi utilizado um Arduino Nano (pode-se utilizar um Arduino Uno) com os seguintes sensores:
-* **BME280** - Sensor de temperatura, umidade e pressão atmosférica;
-* **OLED Graphic Display 128x64 with SSD1306 controller** - Display gráfico para exibir os dados coletado pelo BME280 em tempo real;
-* **NRF24l01** - Wireless transceiver modulo utilizado para transmitir os dados da estação metereológica para a estação base.
+## Sensors
+To build this project was used on an Arduino Nano (the Arduino Uno can be used too) with the following sensors:
 
-## Bibliotecas
-As biblioetcas listadas abaixo foram utilizadas na escrita so software:
+* **BME280** - Sensor capable to collect data about temperature, humidity and pression. The altitude is calculated based on pression reading.
+* **OLED Graphic Display 128x64 with SSD1306 controller** - Graphical display to show the collected data by BME280 sensor;
+* **NRF24l01** - Wireless transceiver module used to transmit the collected data by sensor to base station.
 
-* **Adafruit BME280 Library**: Biblioteca necessária para utilização do sensor *BME280*;
-* **Adafruit Unified Sensor**: Dependência necessária para a utilização correta da *Adafruit BME280 Library*
-* **RF24 by TMRh20**: Biblioteca necessária para utilização do sensor *NRF24l01*;
-* **RF24Network by TMRh20**: Biblioteca necessária para criação de uma rede de sensores com o *NRF24l01*;
-* **U8glib**: Biblioteca necessária para utilizar o OLED *Graphic Display 128x64*
+## Libraries
+Were used the following libraries to write the weather station software:
 
-Todas as bibliotecas devem ser intaladas através do *gerenciador de bibliotecas* do Arduino IDE.
+* **Adafruit BME280 Library**: This library is necessary to access the *BME280* sensor by arduino;
+* **Adafruit Unified Sensor**: Necessary dependency to use correctly the *Adafruit BME280 Library*
+* **RF24 by TMRh20**: Necessary library to use the *NRF24l01* sensor;
+* **RF24Network by TMRh20**: Necessary library to create a sensor network using the *NRF24l01* transceiver;
+* **U8glib**: Necessary library to write text on the *OLED Graphic Display 128x64*
 
-## Esquematico elétrico
-A figura abaixo exibe como os componentes elétricos foram conectados ao Arduino:
+The libraries listed above must be installed through the **Library Manager** of **Arduino IDE**.
+
+## Electrical Schematic
+The figure bellow show as the phisical sensors must be connected on Arduino:
 
 ![Image of Arduino Eletronic Schematic](hackaton-arduino.png)
 
-## Projetos relacionados
+## Related Projects
 
-Este projeto apenas realiza a leitura de temperatura, umidade, pressão e altitude e envia esses dados para uma estação base. Também foi construido um dashboard em HTML5, CSS3 e JS que exibe esses dados para o usuário consumindo um API REST que a estação base expõe. Para maiores detalhes sobre o projeto da estação base ou do dashboard, acesse:
+This project only reads the temperature, humidity, pressure, and altitude and sends this data to a base station. A dashboard was also built in HTML5, CSS3, and JS that displays this data to the user by consuming a REST API exposed by the base station. For more details of the base station project or dashboard project, visit:
+
 * [Raspberry Pi Weather Base Station](http://google.com)
 * [Weather Station Dashboard](http://google.com)
