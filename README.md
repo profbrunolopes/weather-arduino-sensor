@@ -23,3 +23,9 @@ Todas as bibliotecas devem ser intaladas através do *gerenciador de bibliotecas
 A figura abaixo exibe como os componentes elétricos foram conectados ao Arduino:
 
 ![Image of Arduino Eletronic Schematic](hackaton-arduino.png)
+
+## Projetos relacionados
+
+Este projeto apenas realiza a leitura de temperatura, umidade, pressão e altitude e envia esses dados para uma estação base. Também foi construido um dashboard em HTML5, CSS3 e JS que exibe esses dados para o usuário consumindo um API REST que a estação base expõe. Para maiores detalhes sobre o projeto da estação base ou do dashboard, acesse:
+* [Raspberry Pi Weather Base Station](http://google.com)
+* [Weather Station Dashboard](http://google.com)
