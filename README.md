@@ -1,11 +1,15 @@
 # Weather Arduino Sensor
 
-O intuito deste projeto é construir uma estação metereológica com Arduino utilizando os seguintes sensores:
+O intuito deste projeto é construir uma estação metereológica com Arduino capaz de coletar dados de temperatura, umidade, pressão atmosférica e altitude e enviar esses dados para uma estação base.
+
+## Sensores
+Para construir esse projeto foi utilizado um Arduino Nano (pode-se utilizar um Arduino Uno) com os seguintes sensores:
 * **BME280** - Sensor de temperatura, umidade e pressão atmosférica;
 * **OLED Graphic Display 128x64 with SSD1306 controller** - Display gráfico para exibir os dados coletado pelo BME280 em tempo real;
 * **NRF24l01** - Wireless transceiver modulo utilizado para transmitir os dados da estação metereológica para a estação base.
 
-Além dos componentes elétricos acima, foram utilizado as seguintes bibliotecas:
+## Bibliotecas
+As biblioetcas listadas abaixo foram utilizadas na escrita so software:
 
 * **Adafruit BME280 Library**: Biblioteca necessária para utilização do sensor *BME280*;
 * **Adafruit Unified Sensor**: Dependência necessária para a utilização correta da *Adafruit BME280 Library*
@@ -15,6 +19,7 @@ Além dos componentes elétricos acima, foram utilizado as seguintes bibliotecas
 
 Todas as bibliotecas devem ser intaladas através do *gerenciador de bibliotecas* do Arduino IDE.
 
-Abaixo segue o esquemático elétrico para montagem da estação metereológica com o Arduino:
+## Esquematico elétrico
+A figura abaixo exibe como os componentes elétricos foram conectados ao Arduino:
 
 ![Image of Arduino Eletronic Schematic](hackaton-arduino.png)
